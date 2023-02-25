@@ -1,0 +1,125 @@
+
+
+.footer{
+    background: hsl(216, 53%, 9%);
+    padding-block: 3rem ;
+    padding-inline: 2em;
+    padding-top: 12rem;
+}
+
+.footer-icon{
+    width :1.7rem;
+}
+
+.footer-content{
+    display: grid;
+    gap: 2.5em;
+    grid-template-areas: 
+    'address'
+    'phone-and-email'
+    'about'
+    'contact'
+    'social'
+    ;
+
+    margin-top: 3em;
+}
+.address{
+    grid-area: address;
+}
+.phone-and-email{
+    grid-area: phone-and-email;
+}
+
+.about{
+    grid-area: about;
+}
+.contact{
+    grid-area: contact;
+}
+
+.social{
+    grid-area: social;
+}
+
+.footer ul li + li{
+    margin-top: 1em;
+
+}
+ 
+
+.address  ,
+.phone-and-email div{
+    display: flex;
+    gap: 1.5em;
+}
+
+.phone-and-email .footer-icon{
+    width: 18px;
+    
+}
+
+.phone-and-email  div + div{
+    margin-top: 1em;
+}
+
+/* social */
+.social{
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+li a i{
+    font-size: 1.3em;
+}
+
+.footer .social li {
+    border: 2px solid #fff;
+    padding: 0.6em 0.8em;
+    margin: 0;
+    border-radius: 50%;
+}
+ 
+
+ 
+
+@media(min-width:768px){
+
+    .footer{
+        padding-inline: 3rem;      
+        padding-top: 12em;
+        margin: 0;
+    }
+
+    .footer-content{
+        gap: 3.5rem;
+    
+        grid-template-areas: 
+        'address phone-and-email'
+        'about contact'
+        'social social'
+        ;
+    }
+    
+
+}
+
+@media(min-width:1300px){
+
+    .footer{
+        padding-inline: 4rem;
+    }
+
+    .footer-content{
+        gap: 5rem;
+        grid-template-areas: 
+        'address phone-and-email about contact social'
+        ;
+     
+    }
+    .social{
+        align-items: flex-start;
+    }
+}

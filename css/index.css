@@ -1,0 +1,134 @@
+
+
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+:root{
+    --cyan:hsl(176, 68%, 64%);
+    --blue:hsl(198, 60%, 50%);
+    --light-red:hsl(0, 100%, 63%);
+
+    --blue-one:hsl(217, 28%, 15%);
+    --blue-two:hsl(218, 28%, 13%);
+    --blue-three:hsl(216, 53%, 9%);
+    --blue-four:hsl(219, 30%, 18%);
+
+
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-inline: auto;
+}
+
+h1 , 
+h2 ,
+h3,
+a,
+.btn{
+    font-family: 'Raleway', sans-serif;
+
+}
+h1 , h2{
+    margin-bottom: 0.7em;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.header li a:hover{
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer li a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social li:hover a i{
+    color: var(--cyan);
+    
+}
+.social li:hover{
+    border-color:var(--cyan);
+    cursor: pointer;
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.image{
+    width: 80%;
+    max-width: 500px;
+    margin-inline: auto;
+    margin-block:2em;
+}
+
+.btn{
+    display: inline-block;
+    background:linear-gradient(to right,hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    padding: 1em 2.5em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+.btn-secondary{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--cyan);
+    margin-top: 2em;
+}
+
+.btn-secondary::after{
+    content: '';
+    display: inline-block;
+    width: 11.2em;
+    position: absolute;
+    height: 2px ;
+    background: var(--cyan);
+    bottom: -0.5em;
+
+}
+
+.content{
+    width: 88%;
+    max-width: 550px;
+    margin-inline: auto;
+}
+
+section,
+.container{
+    max-width: 1300px;
+    margin-inline: auto;
+}

@@ -1,0 +1,59 @@
+
+
+.header{
+ 
+    padding:2em 1.5em 0em;
+    text-align: center;
+    background: hsl(217, 28%, 15%)  url('../images/bg-curvy-mobile.svg');
+    background-position: center 101% ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 0.2em;
+}
+
+
+
+ 
+
+.header .btn{
+    padding-inline: 6em;
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-links-container{
+    display: flex;
+    gap: 1.5em;
+}
+ 
+
+.header .btn{
+    margin-top: 2em;
+
+}
+
+@media(min-width:768px){
+   
+    .header{
+        background: hsl(217, 28%, 15%)  url('../images/bg-curvy-desktop.svg');
+        background-position: center 101% ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 2em;
+    }
+}
+@media(min-width:1300px){
+   
+    .header{
+        padding: 4em 5em;
+    }
+}
